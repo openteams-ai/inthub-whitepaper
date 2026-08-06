@@ -7,7 +7,7 @@
 
 *How a Three-Layer Architecture — Infrastructure, Execution, and Economy — with Cross-Cutting Validation* *enables Context-Sharing, Capability Exchange, and Accountable Intelligence*
 
-July 2026  |  Confidential  |  Revision 8
+July 2026  |  Revision 8
 
 # **Executive Summary**
 
@@ -886,7 +886,7 @@ This is not a vision built on hope. It is built on the same pattern that Travis 
 | Guards and Gates verify and control the work, Tracks preserve the evidence, |
 | and the Desktop/Web Application makes it all usable by the human at work. |
 
-OpenTeams  |  nebari.dev  |  Confidential — July 2026  |  Revision 8
+OpenTeams  |  nebari.dev  |  July 2026  |  Revision 8
 
 # **Sources**
 
