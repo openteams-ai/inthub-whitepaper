@@ -14,6 +14,10 @@ The paper covers the shift from rented to owned intelligence, the Intelligence H
 |---|---|
 | `Intelligence_Hub_Whitepaper_v8.md` | The whitepaper source of truth (Markdown) |
 | `media/` | Figure images referenced by the source (`image1` = architecture overview, `image2` = validation lifecycle) |
+| `GLOSSARY.md` | Canonical terminology — the authoritative definitions all materials should cite |
+| `MESSAGING.md` | Approved short-form messaging variants by audience |
+| `SOURCES.md` | Claims register — every statistical claim mapped to its verified source |
+| `tools/` | `make_diagrams.py` — regenerates the figures in `media/` |
 | `outputs/` | Locally generated formatted output (.docx, .pdf) — git-ignored; published as release assets instead |
 
 ## Releases
