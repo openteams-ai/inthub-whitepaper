@@ -1,6 +1,6 @@
 # Sources — Claims Register
 
-The claims-to-source mapping for the whitepaper (Revision 8). Every statistical claim or direct quotation in the paper traces to an entry here. When revising the paper, re-verify the entries you rely on and update the Status column; when adding a claim, add its source here first.
+The claims-to-source mapping for the whitepaper (Revision 9). Every statistical claim or direct quotation in the paper traces to an entry here. When revising the paper, re-verify the entries you rely on and update the Status column; when adding a claim, add its source here first.
 
 **Status key:** ✅ verified against the source (August 2026) · 🔶 secondary coverage of primary remarks · ⚠️ needs periodic re-verification (dates/predictions age).
 
@@ -37,6 +37,9 @@ The claims-to-source mapping for the whitepaper (Revision 8). Every statistical 
 | 29 | McKinsey QuantumBlack, "Seizing the Agentic AI Advantage" (Jun 2025) | Gen-AI paradox: ~80% deployed / ~80% no material earnings impact; <10% of use cases past pilot; evaluation + guardrail remedy (Section 5 intro) | [link](https://www.mckinsey.com/capabilities/quantumblack/our-insights/seizing-the-agentic-ai-advantage) | ✅ |
 | 30 | Gartner press release (May 26, 2026) | By 2027, 40% of enterprises will demote or decommission autonomous AI agents due to governance gaps found after production incidents (Section 7.7) | [link](https://www.gartner.com/en/newsroom/press-releases/2026-05-26-gartner-says-applying-uniform-governance-across-ai-agents-will-lead-to-enterprise-ai-agent-failure) | ✅ verbatim |
 | 31 | Black Duck, OSSRA Report (annual) | Open-source components present in the overwhelming majority of commercial codebases (Section 3.1) | [link](https://www.blackduck.com/resources/analyst-reports/open-source-security-risk-analysis.html) | ✅ |
+
+| 32 | Cloudflare, "Cloudflare OS" (blog, Aug 2026) | Category validation for agent workspace + policy gatekeepers + app platform; Apache-2.0 with a workerd self-host path, designed for Cloudflare's network, self-host tooling in progress per their README (Section 4.2; competitive table) | [link](https://blog.cloudflare.com/cloudflare-os/) | ✅ |
+| 33 | Earendil Works, "Session Portability" (2026) | Inference providers making session state non-portable; instance-state capture as lock-in (Section 4.2) | [link](https://earendil.com/posts/session-portability) | ✅ |
 
 ## Removed in Revision 8 (do not reintroduce without verification)
 

@@ -12,7 +12,7 @@ The paper covers the shift from rented to owned intelligence, the Intelligence H
 
 | Path | Contents |
 |---|---|
-| `Intelligence_Hub_Whitepaper_v8.md` | The whitepaper source of truth (Markdown) |
+| `whitepaper.md` | The whitepaper source of truth (Markdown) — versions are carried by git tags, not the filename |
 | `media/` | Figure images referenced by the source (`image1` = architecture overview, `image2` = validation lifecycle) |
 | `briefs/` | `executive-brief.md` — two-page summary source (formatted output on releases) |
 | `GLOSSARY.md` | Canonical terminology — the authoritative definitions all materials should cite |
@@ -23,19 +23,19 @@ The paper covers the shift from rented to owned intelligence, the Intelligence H
 
 ## Releases
 
-Formatted output files are attached to tagged releases rather than committed to the branch. The current revision is **v8** — download the .docx and .pdf from the [Releases](../../releases) page.
+Formatted output files are attached to tagged releases rather than committed to the branch. Versions are git tags (the current tag is **v9**); download the .docx and .pdf from the corresponding [release](../../releases). The revision line inside the document is bumped as part of each release.
 
 ## Revision workflow
 
-1. Edit `Intelligence_Hub_Whitepaper_v8.md` (rename per revision as appropriate) and update `media/` if figures change.
+1. Edit `whitepaper.md` (bump the in-document revision line) and update `media/` if figures change.
 2. Regenerate the .docx and .pdf output files into `outputs/`.
 3. Commit and push the source changes, then tag and publish:
 
    ```bash
-   git tag v9 && git push --tags
-   gh release create v9 outputs/*.docx outputs/*.pdf --title "Revision 9" --notes "Summary of changes"
+   git tag v10 && git push --tags
+   gh release create v10 outputs/Intelligence_Hub_Whitepaper.docx outputs/Intelligence_Hub_Whitepaper.pdf --title "Revision 10" --notes "Summary of changes"
    ```
 
 ## Status
 
-OpenTeams working document. Revision 8, July 2026.
+OpenTeams working document. Revision 9, August 2026.

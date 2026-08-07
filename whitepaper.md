@@ -7,7 +7,7 @@
 
 *How a Three-Layer Architecture — Infrastructure, Execution, and Economy — with Cross-Cutting Validation* *enables Context-Sharing, Capability Exchange, and Accountable Intelligence*
 
-July 2026  |  Revision 8
+August 2026  |  Revision 9
 
 # **Executive Summary**
 
@@ -21,7 +21,7 @@ OpenTeams, built on an open-source ecosystem that includes Nebari, provides the 
 
 * Economy — A distributed ecosystem and marketplace where Ops, Cogs, Frames, and Guards are published, discovered, installed, and exchanged across a network of Intelligence Hubs and the humans and organizations they serve
 
-A cross-cutting accountability plane spans all three layers providing the critical step of  **Validation**. Frames inject accountable context into AI work; **Guards** verify that the resulting work is correct, safe, and policy-compliant; **Gates** are process check-points were decisions are made about whether work proceeds, pauses, escalates, or stops; and **Tracks** preserve the evidence needed for audit, learning, and trust. Every Op declares a Validation Strategy so that AI-generated work becomes accountable operational intelligence rather than unverifiable output.
+A cross-cutting accountability plane spans all three layers providing the critical step of  **Validation**. Frames inject accountable context into AI work; **Guards** verify that the resulting work is correct, safe, and policy-compliant; **Gates** are process check-points where decisions are made about whether work proceeds, pauses, escalates, or stops; and **Tracks** preserve the evidence needed for audit, learning, and trust. Every Op declares a Validation Strategy so that AI-generated work becomes accountable operational intelligence rather than unverifiable output.
 
 | Plane / Layer | Core Units | What It Does |
 | :---- | :---- | :---- |
@@ -37,6 +37,21 @@ A cross-cutting accountability plane spans all three layers providing the critic
 Together, these three layers create something the enterprise AI market does not yet have: a principled path from infrastructure to outcome, with an economy of context, capability, and execution that scales as the network grows. This document also identifies the essential initial interface that brings this entire system to the people who must use it — a Desktop/Web Application that lets knowledge workers in every organization interact with their own Intelligence Hub to combine Frames, converse with Frame-oriented Cogs, run Ops, and share organizational context with internal and external collaborators.
 
 The market opportunity is now well-quantified by independent research. McKinsey estimates sovereign AI could represent a $500–$600 billion market by 2030, driven by use cases in regulated industries and the public sector (McKinsey, December 2025). At the same time, PwC's 29th Global CEO Survey (January 2026, n=4,454) finds that 56% of CEOs report zero financial impact from AI and only 12% achieve both cost and revenue benefits. The gap between AI investment and AI outcome is the structural problem that OpenTeams' three-layer architecture is designed to close.
+
+# **A Note on Vocabulary**
+
+This paper introduces six terms. New vocabulary is a real cost — readers arrive fluent in the industry's language of skills, agents, harnesses, workflows, and evals, and every new word spends cognitive budget that could go to the thesis. So here is the entire mapping up front, with the practical difference stated in one line each. The rule we held ourselves to: if a term's difference from the industry's term cannot be stated in one line, the term does not deserve to exist.
+
+| You may know it as… | This paper calls it… | The difference, in one line |
+| :---- | :---- | :---- |
+| Skills | **Frames** | A Frame is a skill with an owner — scoped, versioned, inheritable, accountable to a named human, and able to declare its own validation. |
+| An agent harness | Part of a **Cog** | The harness is the loop; a Cog is what the loop ships as — model, context, tools, and permissions packaged so they can be installed and audited. |
+| An agent workflow | An **Op** | An Op is a workflow with a declared validation strategy: which checks run, where humans decide, what record is kept. |
+| Evals and guardrails | **Guards** | Guards are evals that ship with the artifact — versioned, installable, and run at declared points rather than bolted on after deployment. |
+| An agent trace | A **Track** | A Track is a trace you own: canonical, exportable, and retained under your governance rather than the vendor's. |
+| An agent | A Cog engaged through an Op | The capability is a Cog; the engagement is an Op; identity and memory live in your Hub. Unbundled, agents stay ownable and portable (Section 4.2). |
+
+Everything else in this paper is the argument for why those six differences — ownership, packaging, validation, and evidence — are the entire game.
 
 # **1\.  The Problem: Rented Intelligence Is Fragile, and Context Leaks Away**
 
@@ -236,11 +251,25 @@ The execution gap is now well-documented across multiple independent sources. Mc
 | **Track:**  the full execution record — Frames applied, Guards run, Gates passed, approvals given — is retained for audit and regulatory review. |
 | The example returns in the Cog and Op definitions below, at the Gates of Section 5, and as a complete Op manifest in Section 5.6. |
 
-## **4.2  How Frames, Cogs, and Ops relate to "Agents"**
+## **4.2  Where Agents Fit**
 
-The term "AI agent" is increasingly overloaded and carries significant risk connotations. Typical capabilities traditionally called agents are a combination of two or more the elements explored here.  Frames, Cogs, and Ops provide agentic capability with more granularly defined concepts that can be deployed in billions of compound AI systems across the world. **Frames, Cogs, and Ops deliver the automation power of AI agents with the governance guarantees real organizations require. Their use signals that the organization is relying on the OpenTeams brand promise of ensuring that the organizational context that fuels the value of AI stays governed and managed by the organization.**
+The industry has converged on the agent: a model in a loop, with tools, pursuing a goal. Agents now write software, install systems, search, summarize, and act — and every serious platform ships them. This architecture does not compete with that convergence; it completes it. The hard problem in enterprise AI is no longer *building* an agent. It is *employing* one.
+
+Employment is a different set of questions. Who does this agent work for? Whose context and policies govern it? Which tools and data may it touch, and under whose identity? How much autonomy has it actually been granted — and by whom? Who checks its work before the work has consequences? And when it is done, what record remains for the people accountable for the outcome?
+
+The word "agent" names a runtime blur across three things this architecture keeps deliberately separate. The *capability* is a Cog — installable, versioned, and auditable before it runs. The *engagement* is an Op — the goal, the autonomy budget, the checkpoints, the validation strategy. And the *continuing actor* — the identity, credentials, memory, and history that make an agent feel like a colleague rather than a function call — is held by the Intelligence Hub itself: identity from the Hub's own directory, credentials brokered and scoped rather than copied, memory in Local and Organizational Memory, history in Tracks. An agent, precisely, is **a Cog engaged through an Op, given identity and memory by the Hub**. The industry fuses these into one word; fused, they are how vendors capture instance state and why governance cannot be tailored. Kept separable, agents stay ownable, auditable, and portable.
+
+Each element of the architecture answers one of the employment questions. Frames are the context the agent is oriented by and the policies it is accountable to. A Cog is the qualified hire, vetted before deployment. An Op is the assignment, with the deliverable and the checkpoints defined. Guards check the work; Gates define the autonomy budget — the precise boundary between what the agent may do alone and what requires a human; Tracks are its personnel record. The Hub is the workplace: identity, tools, compute, and memory inside the organization's own perimeter.
+
+Autonomy, in this model, is granted rather than assumed — and granted per engagement, not per platform. A drafting Op may run nearly unattended; a payments Op may require approval at every consequential step. This is the shape analysts now insist on: Gartner warns that applying uniform governance across AI agents leads to failure, and predicts that by 2027, 40% of enterprises will demote or decommission autonomous agents due to governance gaps identified only after production incidents (Gartner, May 2026). The Gate mechanism is autonomy tailoring made operational.
+
+The market is closing in on this gap from both directions. Cloudflare OS — an agent workspace grounded in organizational context and skills, policy-enforcing "Gatekeepers," and a persistent app platform — validates the category — and shows that openness and sovereignty are different properties. The code is Apache-2.0 and can run on the open-source workerd runtime, but the system is designed for one vendor's network — its durable-state semantics, identity, inference routing, and production operations — with self-hosting an escape hatch whose tooling Cloudflare itself describes as still in progress (Cloudflare, August 2026). At the same time, practitioners are documenting how inference providers make running sessions deliberately non-portable: encrypted reasoning, sealed sub-agent state, context only the original vendor can reconstruct (Earendil Works, 2026). Both point the same way — whoever holds an agent's context, memory, and history owns the agent. This architecture exists so that the owner is the organization.
+
+The same rules apply when agents operate the infrastructure itself. An agent that installs software, provisions a cluster, or patches a deployment is performing an Op like any other: its authority pre-checked by Guards, its actions recorded in a Track, its artifacts pinned by Nebi so the result is reproducible rather than merely remembered. Agents are the hands; the Hub is the employer of record.
 
 The data on agent deployment without governance is now stark. Only 1 in 5 organizations has a mature governance model for autonomous AI agents (Deloitte State of AI in the Enterprise 2026). AI incidents surged 56.4% in 2024 to a record 233 (Stanford HAI AI Index 2025). Only 43% of organizations have any formal AI governance policy at all (PEX Report 2025/26). Industry analysts now warn that in 2026, regulators and courts will begin clarifying responsibility when AI systems act with limited human oversight — and that in healthcare, AI governance "will no longer differentiate vendors; it will determine whether systems can be deployed at all" (Dataversity, February 2026). The Frame, Cog, and Op architecture is built precisely for this regulatory environment.
+
+**The industry built the agent. The Intelligence Hub is where agents are employed — with context, supervision, and a record.**
 
 ## **4.3  Frames — Shared Cultural Alignment**
 
@@ -272,7 +301,7 @@ A Frame typically carries a mix of cultural context (the why and what of the wor
 
 * Business process details — the procedural backbone that the work follows
 
-Frames are characterized by  essential properties:
+Frames are characterized by essential properties:
 
 | Property | What It Means | Why It Matters |
 | :---- | :---- | :---- |
@@ -633,6 +662,8 @@ The marketplace is built around four classes of exchanged artifact, each with it
 
 This is a key architectural decision of the OpenTeams vision. Rather than building the ecosystem and marketplace around a single class of artifact — say, just Ops, or just models — OpenTeams builds the marketplace around multiple classes – initially these four classes that actually constitute an accountable AI economy: the work, the workers, the context that orients them, and the validation that makes them trustworthy. Each class has its own publishers, its own audience, and its own dynamics.
 
+**What is scarce when code is free.** As generation becomes cheap, code stops being what a marketplace meaningfully exchanges — anyone can produce a plausible artifact this afternoon. What cannot be generated on demand is verification, context, and accountability. A HIPAA Privacy Guard is valuable because of who stands behind it, not because of its code. A Frame is distilled organizational expertise with a named, accountable owner. An Op that has accumulated a thousand validated Tracks is trustworthy in a way that the same Op generated this morning is not — and that trust cannot be faked, because Tracks only accumulate through governed, real use. GitHub distributes code; this marketplace distributes vouched-for capability with provenance attached. When generation is free, provenance is the product.
+
 The Frame side of the economy is primarily about coordination and shared abstraction, not transaction. Communities of practice publish Frames so members can align on terminology and methods. Industry consortia publish Frames that encode best practices. Open-source ecosystems publish Frames that make it easy to adopt their tools and conventions. Within organizations, departments and teams publish Frames so that work flows consistently across people, partners, and AI systems. The marketplace is where this sharing happens at scale — most of it free, some of it commercial, all of it organized around the open Frame protocol.
 
 The Guard side of the economy reinforces trust across the other three classes: an Op that ships with well-known, community-vetted Guards is easier to adopt than one that asks to be taken on faith. Tracks, by contrast, will rarely be exchanged. They contain sensitive operational evidence and should stay governed inside the Intelligence Hub that produced them, while anonymized or aggregated Track data can inform quality rankings, benchmark results, and marketplace trust signals.
@@ -848,6 +879,7 @@ The combination of Nebari, Intelligence Hubs, Frames, Cogs, Ops, the Guards, Gat
 | Foundation Model Providers (OpenAI, Anthropic, Google) | Powerful models via API | Infrastructure standard; execution layer; portable context (Frames); marketplace; sovereignty |
 | Cloud AI Platforms (AWS SageMaker, Azure ML) | Managed model deployment | Open standard; Frame-based context portability; Op/Cog ecosystem; marketplace; desktop experience |
 | Agent Frameworks (LangChain, AutoGen) | Agent orchestration libraries | Infrastructure; governance; installable packages; enterprise trust; context-sharing protocol |
+| Agent OS Platforms (Cloudflare OS) | Agent workspace, policy gatekeepers, and app platform — open source | Operational sovereignty (single-vendor design center; production self-hosting still maturing); ecosystem-governed standards; portable context standard; artifact marketplace |
 | Enterprise Software Vendors (Salesforce, ServiceNow) | Vertical AI features | Open standard; extensibility; cross-domain Frame/Op marketplace; sovereign deployment |
 | OpenTeams \+ Nebari | All three layers plus the validation that spans them: infra \+ execution (Frames, Cogs, Ops) \+ validation (Guards, Gates, Tracks) \+ economy | — |
 
@@ -886,7 +918,7 @@ This is not a vision built on hope. It is built on the same pattern that Travis 
 | Guards and Gates verify and control the work, Tracks preserve the evidence, |
 | and the Desktop/Web Application makes it all usable by the human at work. |
 
-OpenTeams  |  nebari.dev  |  July 2026  |  Revision 8
+OpenTeams  |  nebari.dev  |  August 2026  |  Revision 9
 
 # **Sources**
 
@@ -953,6 +985,10 @@ Statistical claims and direct quotations throughout this whitepaper are drawn fr
 30\.  Gartner. "Gartner Says Applying Uniform Governance Across AI Agents Will Lead to Enterprise AI Agent Failure." Press release, May 26, 2026\. [https://www.gartner.com/en/newsroom/press-releases/2026-05-26-gartner-says-applying-uniform-governance-across-ai-agents-will-lead-to-enterprise-ai-agent-failure](https://www.gartner.com/en/newsroom/press-releases/2026-05-26-gartner-says-applying-uniform-governance-across-ai-agents-will-lead-to-enterprise-ai-agent-failure)
 
 31\.  Black Duck (formerly Synopsys Software Integrity Group). "Open Source Security and Risk Analysis (OSSRA) Report," annual. [https://www.blackduck.com/resources/analyst-reports/open-source-security-risk-analysis.html](https://www.blackduck.com/resources/analyst-reports/open-source-security-risk-analysis.html)
+
+32\.  Cloudflare. "Cloudflare OS." Blog post, August 2026\. [https://blog.cloudflare.com/cloudflare-os/](https://blog.cloudflare.com/cloudflare-os/)
+
+33\.  Earendil Works. "Session Portability." 2026\. [https://earendil.com/posts/session-portability](https://earendil.com/posts/session-portability)
 
 [image1]: media/image1.png
 

@@ -6,9 +6,9 @@ This file is the authoritative definition set for the Distributed AI Economy whi
 
 ## The canonical relationship
 
-**Nebari is OpenTeams' flagship open-source contribution to the open source AI infrastructure ecosystem. Nebi is the reproducibility and distribution mechanism. The Intelligence Hub is a customer-specific assembly of open-source and proprietary components that OpenTeams can  help organizations build and maintain.**
+**Nebari is OpenTeams' flagship open-source contribution to the AI infrastructure ecosystem. Nebi is the reproducibility and distribution mechanism. The Intelligence Hub is a customer-specific assembly of open-source and proprietary components that OpenTeams integrates, governs, and maintains.**
 
-Nebari is a contribution, not the platform. The platform is standards and open source. An Intelligence Hub is a concept that is personalizd to each organization (or division in a larger organization).
+Nebari is a contribution, not the platform. The platform is standards and open source. An Intelligence Hub is not "a Nebari deployment."
 
 ## Core terms
 
@@ -17,6 +17,8 @@ Nebari is a contribution, not the platform. The platform is standards and open s
 **Cog** — A discrete, AI-powered worker; the atomic unit of AI work in the system. A Cog encapsulates a model (possibly specialized), a context that includes one or more Frames, the skills, tools, and APIs it may use, and its governance parameters. Cogs are the key artifact distributed by Nebi and can include all the code, dependencies, and weights needed to generate an output from an input.
 
 **Op** — An orchestrated, supervised AI workflow that maps onto how knowledge workers describe their job ("Close the books," "Review this vendor for fraud"). An Op composes Cogs, applies Frames, coordinates through a supervising model, includes human-in-the-loop checkpoints, and carries a Nebi-compatible manifest and a declared Validation Strategy. Ops are versioned, installable, Frame-oriented, supervised, triggerable, self-contained, and composable.
+
+**Agent** — The industry's word for a model in a loop with tools and a goal; in this architecture, a runtime phenomenon deliberately unbundled: the *capability* is a Cog, the *engagement* is an Op, and the *continuing actor* — identity, credentials, memory, history — is held by the Hub. Precisely: **an agent is a Cog engaged through an Op, given identity and memory by the Hub.** Kept separable, agents stay ownable, auditable, and portable.
 
 **Guard** — Installable, versioned test and verification code that confirms the output of AI is in line with the standards and guidelines of the organization: a reusable verification-and-protection component that checks whether Cog or Op work is correct, safe, policy-compliant, and ready for use. Categories include Algorithmic, Source-Grounding, Consensus, Expert, Policy & Safety, Regression & Drift, and Outcome Guards. Frames can declare associated Guards; every Op must declare its Guards.
 
@@ -30,9 +32,9 @@ Nebari is a contribution, not the platform. The platform is standards and open s
 
 ## Infrastructure terms
 
-**Intelligence Hub** — A sovereign, governed deployment inside an organization's own infrastructure perimeter that integrates models, data, business systems, workflows, and the organization's accumulated Frames, Cogs, Ops, and Guards into a unified AI control plane. Each Hub is a customer-specific assembly built on the organization's existing infrastructure; there is no mandatory platform, no shared tenant.
+**Intelligence Hub** — A sovereign, governed deployment inside an organization's own infrastructure perimeter that integrates models, data, business systems, workflows, and the organization's accumulated Frames, Cogs, Ops, and Guards into a unified AI control plane. Each Hub is a customer-specific assembly built on the organization's existing infrastructure; there is no central Hub, no mandatory platform, no shared tenant.
 
-**Organizational Memory** — The Hub's persistent context substrate, holding both *intentional, human-accountable* context (Frames) and *emergent* context (records of Cog and Op activity, including Gates and Tracks). It also holds all the knowledge, context, skills, tools, and institutional memory that enables the organization to deliver it's purpose. It belongs to the organization that produced it and cannot be rented or outsourced.
+**Organizational Memory** — The Hub's persistent context substrate, holding both *intentional, human-accountable* context (Frames) and *emergent* context (records of Cog and Op activity, including Gates and Tracks). It belongs to the organization that produced it and cannot be rented or outsourced.
 
 **Nebari** — OpenTeams' flagship open-source contribution to the AI infrastructure ecosystem (nebari.dev): a modular, composable stack for deploying, managing, and scaling AI infrastructure reproducibly.
 
@@ -48,3 +50,4 @@ Nebari is a contribution, not the platform. The platform is standards and open s
 - "Three-layer architecture with a cross-cutting accountability plane" — never "four layers."
 - Formatted .docx/.pdf builds of the whitepaper are "formatted output," not "derivatives."
 - The category is **accountable enterprise AI**.
+- Do not define agents away; unbundle them. "The industry built the agent. The Intelligence Hub is where agents are employed."

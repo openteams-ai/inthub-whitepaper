@@ -53,6 +53,14 @@ Nebari is our contribution. Our platform is standards and open source.
 
 > The future is not software alone. It is accountable intelligent operations — built on software, data, models, and governed context.
 
+## The agents framing
+
+> The industry built the agent. The Intelligence Hub is where agents are employed — with context, supervision, and a record.
+
+> An agent is a Cog engaged through an Op, given identity and memory by the Hub. Whoever holds an agent's context, memory, and history owns the agent. We think that should be you.
+
+> Everyone can build an agent. Nobody has built the employer.
+
 ## Usage notes
 
 - Lead regulated-industry conversations with the accountability plane; lead developer conversations with open standards and Nebari; lead executive conversations with owned vs. rented intelligence.
