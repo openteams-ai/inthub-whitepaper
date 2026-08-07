@@ -15,6 +15,7 @@ The paper covers the shift from rented to owned intelligence, the Intelligence H
 | `whitepaper.md` | The whitepaper source of truth (Markdown) — versions are carried by git tags, not the filename |
 | `media/` | Figure images referenced by the source (`image1` = architecture overview, `image2` = validation lifecycle) |
 | `briefs/` | `executive-brief.md` — two-page summary source (formatted output on releases) |
+| `explainers/` | Audience-specific walkthroughs of the paper — executive, technical, and plain-English primers |
 | `GLOSSARY.md` | Canonical terminology — the authoritative definitions all materials should cite |
 | `MESSAGING.md` | Approved short-form messaging variants by audience |
 | `SOURCES.md` | Claims register — every statistical claim mapped to its verified source |
@@ -28,8 +29,9 @@ Formatted output files are attached to tagged releases rather than committed to 
 ## Revision workflow
 
 1. Edit `whitepaper.md` (bump the in-document revision line) and update `media/` if figures change.
-2. Regenerate the .docx and .pdf output files into `outputs/`.
-3. Commit and push the source changes, then tag and publish:
+2. If terminology changed — a concept added, renamed, or redefined — update `explainers/` to match. The "A Note on Vocabulary" table in the paper is the quickest way to see whether anything moved.
+3. Regenerate the .docx and .pdf output files into `outputs/`.
+4. Commit and push the source changes, then tag and publish:
 
    ```bash
    git tag v10 && git push --tags
