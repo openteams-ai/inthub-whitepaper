@@ -37,7 +37,7 @@ Canonical language for decks, briefs, web copy, and conversations. Pick the vari
 
 ## The opportunity in one sentence
 
-> OpenTeams is building the Linux + App Store for accountable enterprise AI — where Intelligence Hubs are the owned enterprise deployments, Nebari anchors the open-source infrastructure ecosystem OpenTeams assembles into each Hub, Nebi makes every artifact reproducible and distributable, Frames carry the shared culture and context, Cogs perform the work, Ops orchestrate the outcomes they deliver together, Guards and Gates verify and control the work, Tracks preserve the evidence, and the Desktop/Web Application makes it all usable by the human at work.
+> A distributed AI economy is the Linux + App Store for accountable enterprise AI — where Intelligence Hubs are the owned enterprise deployments, open source (Nebari among it) anchors the infrastructure assembled into each Hub, Nebi makes every artifact reproducible and distributable, Frames carry the shared culture and context, Cogs perform the work, Ops orchestrate the outcomes they deliver together, Guards and Gates verify and control the work, Tracks preserve the evidence, and products around the Hub make it all usable by the human at work — built by many, OpenTeams among them.
 
 ## The canonical relationship (positioning)
 
@@ -52,6 +52,32 @@ Nebari is our contribution. Our platform is standards and open source.
 ## The future-of-software line
 
 > The future is not software alone. It is accountable intelligent operations — built on software, data, models, and governed context.
+
+## Lines shared with ownyourintelligence.ai (keep all surfaces converged)
+
+> A Cog is an AI worker you can hold to account.
+
+> Evidence is not for sale. (Tracks stay home.)
+
+> Context is capital. Every prompt that re-explains the organization is capital spent as an expense; a Frame is that context accreting as a versioned asset.
+
+> Sovereignty is realistic, not absolutist: control your model choice, data paths, policies, and evidence — without manufacturing chips or training a frontier model.
+
+## The author's stance (the paper's "why listen")
+
+> I have spent nearly three decades building shared abstractions and helping organizations adopt them. None of that was built to be owned by one company; the value accrued broadly, and that was the point. This paper is my argument for making the AI era go the same way.
+
+## The ecosystem framing
+
+> Frames, Cogs, Ops, Guards, Gates, and Tracks are shared abstractions — open standards we promote so that many parties can build to them, open and commercial.
+
+> Every organization is better off owning its Intelligence Hub. The products and services around it — experience apps, compute and model management, Track stores, Gate consoles, Op and Cog builders, Guard libraries, specialized Ops — are an economy built by many and integrated into owned Hubs.
+
+> Horizontal Ops serve many industries; vertical specialization is one organization's SOPs made portable through its Frames, Guards, and Tracks.
+
+## The Cogs framing
+
+> Harnesses, skills, tools, and graph layers are the software that makes model weights into a worker. A Cog is where all of that ships — versioned, installable, auditable. Cog builders choose the harness; Cog consumers get the unit.
 
 ## The agents framing
 

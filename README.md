@@ -2,18 +2,18 @@
 
 **Intelligence Hubs, Frames, Cogs, Ops, and the Accountability Plane**
 
-This repository is the master source for the OpenTeams whitepaper describing a three-layer architecture — Infrastructure, Execution, and Economy — with a cross-cutting validation plane that makes AI work accountable.
+This repository is the master source for the OpenTeams whitepaper describing the architecture of a scalable, distributed AI economy — three layers (Infrastructure, Execution, Economy) with a cross-cutting accountability plane — and the shared abstractions (Frames, Cogs, Ops, Guards, Gates, Tracks) that let many parties build to it.
 
 > Frames guide the work. Cogs perform the work. Ops orchestrate the work. Guards verify the work. Gates decide whether the work proceeds. Tracks make the work accountable.
 
-The paper covers the shift from rented to owned intelligence, the Intelligence Hub as the organizational deployment (built on the open-source ecosystem, with Nebari as OpenTeams' flagship contribution and Nebi as the reproducibility and distribution mechanism), the Frame / Cog / Op execution model, the Guards / Gates / Tracks accountability plane, the four-class marketplace, and the Desktop/Web Application that brings the system to knowledge workers.
+The paper covers the shift from rented to owned intelligence, the Intelligence Hub as the organizational deployment (built on the open-source ecosystem, with Nebari as OpenTeams' flagship contribution and Nebi as the reproducibility and distribution mechanism), the Frame / Cog / Op execution model, the Guards / Gates / Tracks accountability plane, the four-class marketplace, and the economy of products around the Hub — with a Desktop/Web Application as the worked example.
 
 ## Repository layout
 
 | Path | Contents |
 |---|---|
 | `whitepaper.md` | The whitepaper source of truth (Markdown) — versions are carried by git tags, not the filename |
-| `media/` | Figure images referenced by the source (`image1` = architecture overview, `image2` = validation lifecycle) |
+| `media/` | Figure images referenced by the source (`image1` = architecture overview, `image2` = validation lifecycle, `image3` = the AI stack) |
 | `briefs/` | `executive-brief.md` — two-page summary source (formatted output on releases) |
 | `GLOSSARY.md` | Canonical terminology — the authoritative definitions all materials should cite |
 | `MESSAGING.md` | Approved short-form messaging variants by audience |

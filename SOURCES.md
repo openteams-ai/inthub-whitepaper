@@ -40,6 +40,8 @@ The claims-to-source mapping for the whitepaper (Revision 9). Every statistical 
 
 | 32 | Cloudflare, "Cloudflare OS" (blog, Aug 2026) | Category validation for agent workspace + policy gatekeepers + app platform; Apache-2.0 with a workerd self-host path, designed for Cloudflare's network, self-host tooling in progress per their README (Section 4.2; competitive table) | [link](https://blog.cloudflare.com/cloudflare-os/) | ✅ |
 | 33 | Earendil Works, "Session Portability" (2026) | Inference providers making session state non-portable; instance-state capture as lock-in (Section 4.2) | [link](https://earendil.com/posts/session-portability) | ✅ |
+| 34 | IBM, "What is the AI stack?" (IBM Think, 2025) | Industry framing of the AI stack layers acknowledged in Figure 1 and the "Where This Sits in the AI Stack" section | [link](https://www.ibm.com/think/topics/ai-stack) | ✅ |
+| 35 | ownyourintelligence.ai — the field-guide site derived from this paper | Source of several converged phrasings (Cog as "AI worker you can hold to account," "evidence is not for sale," context as capital, realistic sovereignty) and of the exists/in-development/thesis maturity framing | [link](https://ownyourintelligence.ai) | ✅ companion surface |
 
 ## Removed in Revision 8 (do not reintroduce without verification)
 

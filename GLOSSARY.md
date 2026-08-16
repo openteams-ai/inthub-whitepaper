@@ -14,9 +14,9 @@ Nebari is a contribution, not the platform. The platform is standards and open s
 
 **Frame** — A scoped, text-based artifact (a file or folder of files using an open protocol) that carries the cultural and operational context within which work happens: rules, terminology, goals, style, norms, skills, tool specifications, prompts, architecture descriptions, business process details, and Output Guards to be run on results. Frames are scoped, inheritable, composable, shareable, discoverable, and **owned** — each Frame is accountable to a human or group of humans who intentionally manage it.
 
-**Cog** — A discrete, AI-powered worker; the atomic unit of AI work in the system. A Cog encapsulates a model (possibly specialized), a context that includes one or more Frames, the skills, tools, and APIs it may use, and its governance parameters. Cogs are the key artifact distributed by Nebi and can include all the code, dependencies, and weights needed to generate an output from an input.
+**Cog** — A discrete, AI-powered worker; the atomic unit of AI work in the system. A Cog encapsulates a model (possibly specialized), a context that includes one or more Frames, the skills, tools, and APIs it may use, and its governance parameters. Cogs are the key artifact distributed by Nebi and can include all the code, dependencies, and weights needed to generate an output from an input. Harnesses (including graph-centric ones), skills, tools, retrieval scaffolds, and evaluation hooks are *capabilities a Cog builder uses* to specialize a Cog — internal implementation details of the Cog, not competitors to it. Cogs are how agentic capability is modularized, specialized, and made developable by many parties.
 
-**Op** — An orchestrated, supervised AI workflow that maps onto how knowledge workers describe their job ("Close the books," "Review this vendor for fraud"). An Op composes Cogs, applies Frames, coordinates through a supervising model, includes human-in-the-loop checkpoints, and carries a Nebi-compatible manifest and a declared Validation Strategy. Ops are versioned, installable, Frame-oriented, supervised, triggerable, self-contained, and composable.
+**Op** — An *agentic app*: an orchestrated, supervised AI workflow that maps onto how knowledge workers describe their job ("Close the books," "Review this vendor for fraud"). An Op composes Cogs, applies Frames, coordinates through a supervising model, includes human-in-the-loop checkpoints, and carries a Nebi-compatible manifest and a declared Validation Strategy. Ops are versioned, installable, Frame-oriented, supervised, triggerable, self-contained, and composable.
 
 **Agent** — The industry's word for a model in a loop with tools and a goal; in this architecture, a runtime phenomenon deliberately unbundled: the *capability* is a Cog, the *engagement* is an Op, and the *continuing actor* — identity, credentials, memory, history — is held by the Hub. Precisely: **an agent is a Cog engaged through an Op, given identity and memory by the Hub.** Kept separable, agents stay ownable, auditable, and portable.
 
@@ -30,6 +30,10 @@ Nebari is a contribution, not the platform. The platform is standards and open s
 
 **Validation Strategy** — The part of every Op's contract that declares which Guards are used, where Gates occur, what Tracks are retained and for how long, and when human or expert review is required. An Op is not complete unless it declares how its work will be verified.
 
+**Horizontal AI / Vertical AI** — Horizontal AI is application capability many industries can use (an accounting Op, an HR Op); vertical AI is the organization-specific specialization that makes a solution work against one company's standard operating procedures. Both live at the application layer. The architecture makes vertical specialization portable: a horizontal Op becomes vertical when it picks up an organization's Frames, is checked by its Guards, and leaves Tracks under its governance.
+
+**Products around the Hub** — The second economy of the architecture: Hub experience applications (a desktop/web application among them), compute and model management, Track stores and audit, Gate and review consoles, Op and Cog builders, Guard libraries, specialized Ops for a segment or organization, and integration and operations services — built by many parties, open and commercial, and integrated into an organization's owned Hub. No single vendor supplies them, by design.
+
 ## Infrastructure terms
 
 **Intelligence Hub** — A sovereign, governed deployment inside an organization's own infrastructure perimeter that integrates models, data, business systems, workflows, and the organization's accumulated Frames, Cogs, Ops, and Guards into a unified AI control plane. Each Hub is a customer-specific assembly built on the organization's existing infrastructure; there is no central Hub, no mandatory platform, no shared tenant.
@@ -40,7 +44,7 @@ Nebari is a contribution, not the platform. The platform is standards and open s
 
 **Nebi** — The reproducibility and distribution mechanism: the installation foundation for the Intelligence Hub that defines how environments, models, dependencies, Frames, Cogs, Ops, and Guards are specified, versioned, packaged, and deployed.
 
-**Desktop/Web Application** — The Human Gateway: the canonical (pre-product-name) term for the application through which knowledge workers interact with their Intelligence Hub — combining Frames, conversing with Cogs, running Ops, seeing Guard status and Gate prompts, and sharing context. Use this exact phrase; do not vary it.
+**Desktop/Web Application** — The canonical (pre-product-name) term for one product around the Hub: an application through which knowledge workers interact with their Intelligence Hub — combining Frames, conversing with Cogs, running Ops, seeing Guard status and Gate prompts, and sharing context. It is the paper's worked example of the products-around-the-Hub category, not the category itself. Use this exact phrase; do not vary it.
 
 **The Marketplace** — Layer 3: the distributed economy in which Frames, Cogs, Ops, Guards, and future artifact classes are published, discovered, installed, and exchanged across Intelligence Hubs. Tracks are not exchanged.
 
@@ -50,4 +54,7 @@ Nebari is a contribution, not the platform. The platform is standards and open s
 - "Three-layer architecture with a cross-cutting accountability plane" — never "four layers."
 - Formatted .docx/.pdf builds of the whitepaper are "formatted output," not "derivatives."
 - The category is **accountable enterprise AI**.
+- Participation is described as offering, contributing, and promoting open standards — never as owning or defining them. "Open standards we promote," "open source we contribute," "products built by many."
+- The paper argues for an ecosystem; OpenTeams appears as one participant (contributor, integrator, reseller, super-node), not the center.
+- Do not present the Desktop/Web Application as *the* product; it is one of many products around the Hub.
 - Do not define agents away; unbundle them. "The industry built the agent. The Intelligence Hub is where agents are employed."
