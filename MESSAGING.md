@@ -67,6 +67,14 @@ Nebari is our contribution. Our platform is standards and open source.
 
 > I have spent nearly three decades building shared abstractions and helping organizations adopt them. None of that was built to be owned by one company; the value accrued broadly, and that was the point. This paper is my argument for making the AI era go the same way.
 
+## The Intelligence Infrastructure framing
+
+> The AI transformation will be defined by the evolution of company information technology (IT) infrastructure into company Intelligence Infrastructure.
+
+> Applied, accountable intelligence has to be intimate with your most important data — and that is only safe when you own and control both the data and the intelligence.
+
+> Intimacy without ownership is exposure.
+
 ## The ecosystem framing
 
 > Frames, Cogs, Ops, Guards, Gates, and Tracks are shared abstractions — open standards we promote so that many parties can build to them, open and commercial.

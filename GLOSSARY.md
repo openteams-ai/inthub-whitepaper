@@ -36,6 +36,10 @@ Nebari is a contribution, not the platform. The platform is standards and open s
 
 ## Infrastructure terms
 
+**Intelligence Infrastructure** — What company information technology (IT) infrastructure evolves into in the AI transformation: the owned, controlled, and governed systems through which an organization applies intelligence to its work. An organization's Intelligence Hub is its Intelligence Infrastructure made concrete. The justification is intimacy: applied, accountable intelligence must be intimate with the organization's most important data, and that intimacy is only safe when the organization owns and controls both the data and the intelligence.
+
+**Ownership and control** — Always paired in this paper. Ownership without control is a title deed to a system someone else operates; control without ownership is stewardship that can be revoked. The architecture argues for both — of data, context, models, workflows, evidence, and the infrastructure that binds them.
+
 **Intelligence Hub** — A sovereign, governed deployment inside an organization's own infrastructure perimeter that integrates models, data, business systems, workflows, and the organization's accumulated Frames, Cogs, Ops, and Guards into a unified AI control plane. Each Hub is a customer-specific assembly built on the organization's existing infrastructure; there is no central Hub, no mandatory platform, no shared tenant.
 
 **Organizational Memory** — The Hub's persistent context substrate, holding both *intentional, human-accountable* context (Frames) and *emergent* context (records of Cog and Op activity, including Gates and Tracks). It belongs to the organization that produced it and cannot be rented or outsourced.
@@ -54,6 +58,7 @@ Nebari is a contribution, not the platform. The platform is standards and open s
 - "Three-layer architecture with a cross-cutting accountability plane" — never "four layers."
 - Formatted .docx/.pdf builds of the whitepaper are "formatted output," not "derivatives."
 - The category is **accountable enterprise AI**.
+- Say "own and control" (or "owned and controlled"), not "own" alone, when describing what organizations keep. Frame the transformation as IT → Intelligence Infrastructure.
 - Participation is described as offering, contributing, and promoting open standards — never as owning or defining them. "Open standards we promote," "open source we contribute," "products built by many."
 - The paper argues for an ecosystem; OpenTeams appears as one participant (contributor, integrator, reseller, super-node), not the center.
 - Do not present the Desktop/Web Application as *the* product; it is one of many products around the Hub.
